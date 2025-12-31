@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Kuchupuchu ❤️</title>
+
+    <!-- FIXED CSS PATH -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Background glow -->
+    <div class="bg"></div>
+
+    <!-- Floating hearts -->
+    <div class="hearts page1-hearts">
+        <span>💖</span><span>💕</span><span>💗</span>
+        <span>❤️</span><span>💘</span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="intro-card">
+            <h1>Hey Kuchupuchu ❤️</h1>
+
+            <p class="intro-line">
+                I made something special just for you…
+            </p>
+
+            <p class="intro-sub">
+                A little journey • Some memories • A lot of love 💕
+            </p>
+
+            <button id="startBtn">Start the Journey 💖</button>
+        </div>
+    </div>
+
+    <!-- Cat Guide -->
+    <div class="cat-guide">
+        <!-- FIXED IMAGE PATH -->
+        <img src="images/cat/cat.png" alt="Mochi the Cat">
+        <div class="speech">
+            Click when you’re ready 😼💗
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const btn = document.getElementById("startBtn");
+        const speech = document.querySelector(".speech");
+
+        btn.addEventListener("mouseenter", () => {
+            const x = Math.random() * 60 - 30;
+            const y = Math.random() * 30 - 15;
+            btn.style.transform = `translate(${x}px, ${y}px)`;
+            speech.innerHTML = "Hehe 😼 she’s about to smile…";
+        });
+
+        btn.addEventListener("mouseleave", () => {
+            btn.style.transform = "translate(0,0)";
+            speech.innerHTML = "Click when you’re ready 💕";
+        });
+
+        // FIXED PAGE LINK
+        btn.addEventListener("click", () => {
+            window.location.href = "pages/page1.html";
+        });
+    </script>
+
+    <div class="cursor-trail"></div>
+
+    <!-- FIXED JS PATH -->
+    <script src="js/cursor.js"></script>
+
+</body>
+</html>
+

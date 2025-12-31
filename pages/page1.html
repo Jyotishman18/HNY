@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Why You’re Special 💖</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+    <h1>Why You’re So Special 💕</h1>
+    <p>Just a few reasons… but I could go on forever 🥺</p>
+
+    <div class="cards">
+        <div class="card">🌸 Your smile melts my heart</div>
+        <div class="card">💗 You make my worst days better</div>
+        <div class="card">😄 Your cute madness is my favorite</div>
+        <div class="card">🤍 You feel like home</div>
+    </div>
+
+    <button onclick="nextPage()">Continue 🐾</button>
+</div>
+
+<!-- Cat Guide -->
+<div class="cat-guide">
+    <img src="../images/cat/cat.png" alt="Mochi the Cat">
+    <div class="speech">
+        I checked all reasons 😼<br>
+        She’s perfect.
+    </div>
+</div>
+
+<script>
+const btn = document.querySelector("button");
+
+btn.addEventListener("mouseenter", () => {
+    const x = Math.random() * 120 - 60;
+    const y = Math.random() * 60 - 30;
+    btn.style.transform = `translate(${x}px, ${y}px)`;
+});
+
+function nextPage() {
+    window.location.href = "page2.html";
+}
+</script>
+ <div class="cursor-trail"></div>
+ <script src="../js/cursor.js"></script>
+
+
+
+</body>
+</html>
